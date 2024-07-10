@@ -1,19 +1,52 @@
+.heading{
+  color: white;
+  background: linear-gradient(#eea600, #00ec1cde);
+  padding: 0.5% 0.5% 0.5% 2%;
+  font-size: 1.4em;
+  font-weight: 900;
+}
 
 .App {
   font-family: Arial, sans-serif;
   padding: 20px;
   max-width: 1200px;
   margin: auto;
+  border: 10px solid black;
 }
 
 .tabs {
-  margin-bottom: 20px;
+  margin: 20px;
+
+}
+
+h2{
+  background: rgb(7, 0, 107);
+  color: white;
+  padding: 1.5% 2.5%;
 }
 
 .tabs button {
   margin-right: 10px;
   padding: 10px 20px;
+  font-weight: 700;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
 }
+
+.tabs1{
+  background-color: #eea600;
+  color: white;
+  font-style: italic;
+}
+
+.tabs2{
+  background-color: #00ec1cde;
+  color: white;
+  font-style: italic;
+
+}
+
 
 table {
   width: 100%;
@@ -22,13 +55,124 @@ table {
 }
 
 table, th, td {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+ 
+}
+
+td{
+  background-color: #1db60f;
+
 }
 
 th, td {
   padding: 10px;
   text-align: left;
+  color: rgb(7, 0, 107);
+  
 }
+.age {
+  color: rgb(7, 0, 107);
+  background-color: white;
+  /* bottom: 100px; */
+  /* border: 2px solid white; */
+  font-size: 1.2em;
+  padding: 1% 50%;
+}
+
+th{
+  background-color:#e9aa17;
+  color: white;
+  font-weight: 900;
+  
+}
+td input {
+  height: 2em;
+  font-size: 1em;
+  font-weight: 700;
+  padding-left: 5%;
+  color: rgb(7, 0, 107);
+
+}
+.actions{
+  width: 15%;
+}
+.action1{
+  background-color: rgb(7, 0, 107);
+  padding: 7% 10%;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5%;
+}
+
+.action2{
+  background-color: rgb(7, 0, 107);
+  padding: 7% 10%;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+
+}
+
+.addnew{
+  padding: 1% 1.5%;
+  margin-top: 2%;
+  border: none;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 1em;
+  background: rgb(7, 0, 107);
+  color: white;
+}
+
+.rtr{
+  font-weight: 600;
+}
+
+.rperson{
+  color: white;
+
+}
+.rdob{
+  color: white;
+
+}
+.raadhar{
+  color: white;
+
+}
+.rmobile{
+  color: white;
+
+}
+.rage{
+  color: white;
+
+}
+
+
+.rainput{
+  padding: 0.5% 1%;
+  font-size: 1em;
+  font-weight: 700;
+  border-radius: 10px;
+  color: rgb(7, 0, 107);
+}
+
+.rrbtn{
+  padding: 0.5% 1%;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-left: 2%;
+  border: none;
+  font-weight: 700;
+  color: white;
+  background: rgb(7, 0, 107);
+}
+
+
 
 
 @media (max-width: 768px) {
@@ -37,7 +181,6 @@ th, td {
   }
 
   th {
-    background-color: #f8f8f8;
     font-weight: bold;
   }
 
@@ -52,7 +195,16 @@ th, td {
     text-align: right;
     display: flex;
     flex-direction: column;
+
   }
+  .actions{
+    width: 48%;
+  }
+  .action1{
+    margin-bottom: 5%;
+  }
+
+
 
   td:before {
     content: attr(data-label);
@@ -68,14 +220,22 @@ th, td {
     flex-direction: column;
   
   }
-  .actions{
-    margin-top: 6%;
+   
+
+
+  .rtr td{
+    color: rgb(7, 0, 107);
   }
+
+ 
 }
 
 @media (max-width: 480px) {
   .tabs button {
     width: 100%;
     margin-bottom: 10px;
+  }
+  .actions{
+    width: 46.5%;
   }
 }

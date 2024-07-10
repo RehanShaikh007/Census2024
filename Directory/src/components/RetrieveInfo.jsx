@@ -30,8 +30,8 @@ const RetrieveInfo = () => {
     <div>
       <h2>Retrieve Information</h2>
       <div>
-        <input type="text" placeholder='Enter Aadhar Number' value={aadhar} onChange={(e) => setAadhar(e.target.value)}/>
-        <button onClick={handleRetrieve}>Retrieve</button>
+        <input className='rainput' type="number" placeholder='Enter Aadhar Number' value={aadhar} onChange={(e) => setAadhar(e.target.value)}/>
+        <button className='rrbtn' onClick={handleRetrieve}>Retrieve</button>
       </div>
       {message && <p>{message}</p>}
       {person && (
@@ -46,12 +46,12 @@ const RetrieveInfo = () => {
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td data-label="Name">{person.name}</td>
-                    <td data-label="Date of Birth">{person.dob}</td>
-                    <td data-label="Aadhar Number">{person.aadhar}</td>
-                    <td data-label="Mobile Number">{person.mobile}</td>
-                    <td data-label="Age">{person.age}</td>
+                <tr className='rtr'>
+                    <td className='rperson' data-label="Name">{person.name}</td>
+                    <td className='rdob' data-label="Date of Birth">{person.dob}</td>
+                    <td className='raadhar' data-label="Aadhar Number">{person.aadhar}</td>
+                    <td className='rmobile' data-label="Mobile Number">{person.mobile}</td>
+                    <td className='rage' data-label="Age">{person.age}</td>
                 </tr>
             </tbody>
         </table>

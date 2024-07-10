@@ -71,6 +71,7 @@ const AddPerson = () => {
 
 
   return (
+    
     <div>
       <h2>Add New Person</h2>
       <table>
@@ -91,16 +92,16 @@ const AddPerson = () => {
                    <td data-label="Date of Birth"><input type="date" name='dob' value={row.dob || ''} onChange={(e) => handleChange(index, e)} /></td>
                    <td data-label="Aadhar Number"><input type="number" name='aadhar' value={row.aadhar || ''} onChange={(e) => handleChange(index, e)} /></td>
                    <td data-label="Mobile Number"><input type="number" name='mobile' value={row.mobile || ''} onChange={(e) => handleChange(index, e)} /></td>
-                   <td data-label="Age">{row.age || ''}</td>
+                   <td className='dataAge' data-label="Age"><h3  className='age'>{row.age || ''}</h3></td>
                    <td data-label="Actions" className='actions'>
-                    <button onClick={() => handleSave(index)}>Save</button>
-                    <button onClick={() => handleDelete(index)}>Delete</button>
+                    <button className='action1' onClick={() => handleSave(index)}>Save</button>
+                    <button className='action2' onClick={() => handleDelete(index)}>Delete</button>
                    </td>
                 </tr>
             ))}
         </tbody>
       </table>
-      <button onClick={addRow}>Add New Person</button>
+      <button className='addnew' onClick={addRow}>Add New Person</button>
     </div>
   )
 }

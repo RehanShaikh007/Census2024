@@ -9,9 +9,12 @@ function App() {
 
   return (
     <div className='App'>
+      <section className='heading'>
+      <h1>CENSUS 2024</h1>
+    </section>
       <div className="tabs">
-        <button onClick={() => setActiveTab('add')}>Add New Person</button>
-        <button onClick={() => setActiveTab('retrieve')}>Retrieve Information</button>
+        <button className='tabs1' onClick={() => setActiveTab('add')}>Add New Person</button>
+        <button className='tabs2' onClick={() => setActiveTab('retrieve')}>Retrieve Information</button>
       </div>
       {activeTab === 'add' ? <AddPerson/> : <RetrieveInfo/>}
     </div>
